@@ -1,7 +1,7 @@
 # 📚 BookJournal - Aplication
 ### 👩‍💻 AUTHOR
 
-- [Ainhize Arrese](https://github.com/arreseAinhize)
+- [Ainhize Arrese](https://github.com/A-Arrese)
 
 ##
 ## 🔎 TABLE OF CONTENTS
