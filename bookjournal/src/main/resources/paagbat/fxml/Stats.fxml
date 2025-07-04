@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="statsbackground" prefHeight="600" prefWidth="425.0" stylesheets="@../css/modena.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paagbat.controller.StatsController">
+   <Label fx:id="orriak_Label" alignment="CENTER" layoutX="32.0" layoutY="167.0" prefHeight="84.0" prefWidth="152.0" text="Label">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="dirua_Label" alignment="CENTER" layoutX="213.0" layoutY="167.0" prefHeight="84.0" prefWidth="152.0" text="Label">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <TableView fx:id="rating_TableView" layoutX="37.0" layoutY="313.0" prefHeight="55.0" prefWidth="347.0">
+      <columns>
+      </columns>
+   </TableView>
+   <TableView fx:id="genre_TableView" layoutX="40.0" layoutY="435.0" prefHeight="63.0" prefWidth="347.0" />
+   <Button alignment="CENTER" layoutX="382.0" layoutY="8.0" onAction="#handleLogOut" prefHeight="34.0" prefWidth="24.0" style="-fx-background-color: #668094; -fx-text-fill: white;" textFill="#004aad">
+      <graphic>
+         <ImageView fitHeight="21.0" fitWidth="18.0">
+            <image>
+               <Image url="@../img/icon/home.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button layoutX="382.0" layoutY="50.0" onAction="#mainMenu" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #668094;" styleClass="icon-button">
+      <graphic>
+         <ImageView fitHeight="25.0" fitWidth="24.0">
+            <image>
+               <Image url="@../img/icon/lista.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+</AnchorPane>

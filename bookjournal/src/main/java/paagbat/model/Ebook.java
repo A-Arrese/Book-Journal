@@ -1,0 +1,16 @@
+package paagbat.model;
+
+import paagbat.model.base.BaseBook;
+import paagbat.model.enums.BookFormat;
+import paagbat.model.enums.Genre;
+
+public class Ebook extends BaseBook {
+    public Ebook(int id, String title, String author, Genre genre, int duration, String coverImage) {
+        super(id, title, author, genre, duration, BookFormat.EBOOK, coverImage);
+    }
+
+    @Override
+    public String getExtraInfo() {
+        return "Formato ebook";
+    }
+}

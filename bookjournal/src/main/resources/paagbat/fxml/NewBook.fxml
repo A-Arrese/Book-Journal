@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="newbackground" prefHeight="600" prefWidth="425.0" stylesheets="@../css/modena.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paagbat.controller.NewBookController">
+   <ImageView fx:id="coverImageView" fitHeight="120" fitWidth="90" layoutX="57.0" layoutY="152.0" />
+   <TextField fx:id="izenburuaText" layoutX="181.0" layoutY="159.0" prefHeight="34.0" prefWidth="191.0" />
+   <TextField fx:id="idazleaText" layoutX="181.0" layoutY="244.0" prefHeight="34.0" prefWidth="191.0" />
+   <TextField fx:id="orriakText" layoutX="269.0" layoutY="331.0" prefHeight="34.0" prefWidth="107.0" />
+   <HBox alignment="CENTER" layoutX="55.0" layoutY="421.0" prefHeight="34.0" prefWidth="161.0">
+      <children>
+         <CheckBox fx:id="ebookCheck" alignment="TOP_LEFT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="18.0" prefWidth="107.0" text="Digital book" />
+         <ImageView fitHeight="29.0" fitWidth="26.0" nodeOrientation="INHERIT">
+            <image>
+               <Image url="@../img/icon/ebook.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="55.0" layoutY="457.0" prefHeight="34.0" prefWidth="161.0">
+      <children>
+         <CheckBox fx:id="audioCheck" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="18.0" prefWidth="107.0" text="AudioBook" />
+         <ImageView fitHeight="29.0" fitWidth="26.0" nodeOrientation="INHERIT">
+            <image>
+               <Image url="@../img/icon/audiobook.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" layoutX="55.0" layoutY="492.0" prefHeight="34.0" prefWidth="161.0">
+      <children>
+         <CheckBox fx:id="fisikoaCheck" alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="18.0" prefWidth="107.0" text="Physical book" />
+         <ImageView fitHeight="29.0" fitWidth="26.0" nodeOrientation="INHERIT">
+            <image>
+               <Image url="@../img/icon/book.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+   <ComboBox fx:id="genreCombo" layoutX="55.0" layoutY="331.0" prefHeight="34.0" prefWidth="184.0" visibleRowCount="7" />
+   <Button fx:id="gordeButton" layoutX="278.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Gorde" />
+   <Button fx:id="portadaButton" layoutX="278.0" layoutY="462.0" mnemonicParsing="false" onAction="#handlePortada" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Portada" />
+   <Button fx:id="itxuliButton" layoutX="278.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Itxuli" />
+</AnchorPane>

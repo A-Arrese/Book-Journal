@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="manubackground" prefHeight="600" prefWidth="425.0" stylesheets="@../css/modena.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paagbat.controller.MenuController">
+   <children>
+      <Button id="icon-button" onAction="#ratingSystem" layoutX="68.0" layoutY="130.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: none;" text="                                                                   ">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon/rating.png" />
+               </image></ImageView>
+         </graphic>
+      </Button>
+      <Button id="icon-button" onAction="#readingLog" layoutX="59.0" layoutY="199.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="309.0" style="-fx-background-color: none;" text="                                                                   ">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon/info.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="icon-button" onAction="#wishList" layoutX="65.0" layoutY="268.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="297.0" style="-fx-background-color: none;" text="                                                                   ">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon/wishlist.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="icon-button" onAction="#readingStats" layoutX="65.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="297.0" style="-fx-background-color: none;" text="                                                                   ">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon/stats.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="icon-button" onAction="#readingPixel" layoutX="68.0" layoutY="407.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="39.0" prefWidth="291.0" style="-fx-background-color: none;" text="                                                                   ">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon/agenda.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="icon-button" onAction="#favoriteReading" layoutX="68.0" layoutY="477.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="291.0" style="-fx-background-color: none;" text="                                                                       ">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon/favorito.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="icon-button" alignment="CENTER" layoutX="383.0" layoutY="8.0" onAction="#handleLogOut" prefHeight="34.0" prefWidth="24.0" style="-fx-background-color: #668094; -fx-text-fill: white;" textFill="#004aad">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="18.0">
+               <image>
+                  <Image url="@../img/icon/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
