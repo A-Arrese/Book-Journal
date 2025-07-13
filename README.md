@@ -61,7 +61,11 @@ There is also an option to close the application window in the upper right corne
 
 ![Sign up page appearance](./AppIrudiak/SingUp.png)
 
-### <ins>2.2- Rating System Page</ins>
+### <ins>2.2- Main menu Page</ins>
+
+![Sign up page appearance](./AppIrudiak/MainMenu.png)
+
+### <ins>2.3- Rating System Page</ins>
 This section allows the user to manage book ratings. At the top of the screen, the title "Rating System" appears in a handwritten style, accompanied by colorful decorations (flowers, stickers, and blue colors).
 
 In the center, five rating levels can be seen, divided by the number of stars (from 1 to 5 stars). Next to each level is a text box where the user can write the explanation or rating criteria corresponding to that number of stars. For example: ★, ★★, ★★★★★, etc.
@@ -76,7 +80,7 @@ On the right side, navigation buttons can be seen again, including a home icon t
 
 ![Rating System page appearance](./AppIrudiak/RatingSystem_1.png)
 
-### <ins>2.3- Reading Log Page</ins>
+### <ins>2.4- Reading Log Page</ins>
 In this section, users can track their reading. At the top of the screen, the title "Reading Log" appears in a striking way, decorated with some elements (flowers, stickers, and pastel colors).
 
 In the main area, a table is presented showing information about the books currently being read: columns named Select, Title, Author, and Start. In these columns, the user can see the book's title, author, and start date, as well as a selection box to choose items. For example, works by Rebeca Yarros and Chu-Gong appear in the list.
@@ -89,7 +93,7 @@ The application is presented with a pleasant and organized visual style, allowin
 
 ![New Book page appearance](./AppIrudiak/NewBook.png)
 
-### <ins>2.4- Wishlist Page</ins>
+### <ins>2.5- Wishlist Page</ins>
 This section allows the user to manage their wishlist. At the top right of the screen, the title "WishList" appears in an italic and elegant font. The overall design uses a light style and blue tones, with a background reminiscent of graph paper. In the upper left and lower left corners, there are delicate decorative elements, such as flowers and leaves, giving a charming touch.
 
 In the center, a list of books can be seen in table format. The columns are labeled "Title", "Author", "Price", and "Purchased". Currently, two books appear in the list: "Fleur" by Ariana Godoy with a price of 18.0 and "Yes" as the purchase status; and "Heist" also by Ariana Godoy with a price of 18.0 and "No" as the purchase status. At the beginning of each row, there is a checkbox, probably useful for selecting books.
@@ -100,7 +104,7 @@ At the bottom of the screen, there are three buttons: "New", "Purchased", and "D
 
 ![New wish book page appearance](./AppIrudiak/NewWishBook.png)
 
-### <ins>2.5- Book Review Page</ins>
+### <ins>2.6- Book Review Page</ins>
 This screen allows the user to create a review for a book. At the top right, the title "Book Review" appears in a beautiful and curved font. The background follows the style of previous screens, with blue tones reminiscent of graph paper and delicate decorative elements in the upper left and lower left corners.
 
 In the center, there are several fields organized for entering review information. At the top, there are two text boxes labeled "Title" and "Author", in this case filled with the values "Solo leveling" and "Chu-Gong" respectively.
@@ -114,7 +118,7 @@ At the bottom of the screen, there is a large text box labeled "Book notes" inte
 At the bottom right of the screen, there is a "Save" button, presumably to save the entered information.
 ![Review Book page appearance](./AppIrudiak/ReviewBook.png)
 
-### <ins>2.6- Stats Page</ins>
+### <ins>2.7- Stats Page</ins>
 In this section, general statistics about the user's reading are displayed in a visual and structured way. This screen is accessed through the application's internal navigation system, and its purpose is to provide the user with an overview of their reading habits.
 
 **Data provided to the user:**
@@ -138,13 +142,13 @@ On the right side of the screen, several buttons appear, allowing the user to qu
 
 ![Stats page appearance](./AppIrudiak/Stats.png)
 
-### <ins>2.7- Rating tracker page</ins>
+### <ins>2.8- Rating tracker page</ins>
 
-![Rating tracker page appearance](./AppIrudiak/Stats.png)
+![Rating tracker page appearance](./AppIrudiak/RatingTracker.png)
 
-### <ins>2.8- Favorite books page</ins>
+### <ins>2.9- Favorite books page</ins>
 
-![Favorite books page appearance](./AppIrudiak/Stats.png)
+![Favorite books page appearance](./AppIrudiak/FavoriteBooks.png)
 
 ##
 ## **4.- CLASS DIAGRAM**:
