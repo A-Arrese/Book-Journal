@@ -20,8 +20,8 @@ import paagbat.model.enums.Genre;
 public class SqlConnector {
     private static final String server = "127.0.0.1:3306";
     private static final String db = "bookjournal";
-    private static final String user = "journalAdmin";
-    private static final String pass = "Admin123";
+    private static final String user = "root";
+    private static final String pass = "";
     private static final String coverPath = "bookjournal/src/main/resources/paagbat/img/covers/";
 
     /**

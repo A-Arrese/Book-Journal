@@ -22,7 +22,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-
 import paagbat.App;
 import paagbat.model.Erabiltzailea;
 import paagbat.model.SqlConnector;
@@ -71,12 +70,12 @@ public class NewWishBookController {
         WishBook newBook = new WishBook(0, title, author, prezioa);
 
         if (SqlConnector.saveWishBookToDatabase(newBook, user.getId())) {
-            showAlert("Liburua zuzen gorde da.");
+            showAlert("The book was saved correctly..");
             clearForm();
             App.setRoot("WishList");
 
         } else {
-            showAlert("Errorea liburua gordetzean.");
+            showAlert("Error saving book.");
         }
     }
 

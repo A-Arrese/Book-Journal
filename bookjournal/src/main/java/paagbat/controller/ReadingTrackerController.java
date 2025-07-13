@@ -7,17 +7,17 @@ import java.time.Year;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import javafx.scene.control.Alert;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import paagbat.App;
+import paagbat.model.ReadingTrackerItem;
 import paagbat.model.SqlConnector;
 import paagbat.model.enums.ReadingStatus;
-import paagbat.model.ReadingTrackerItem;
 
 public class ReadingTrackerController {
     @FXML
@@ -66,9 +66,9 @@ public class ReadingTrackerController {
 
         if (status == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Errorea (Egoera okerra)");
+            alert.setTitle("Error (Incorrect status)");
             alert.setHeaderText(null);
-            alert.setContentText("Estado no válido.");
+            alert.setContentText("Invalid status.");
             alert.showAndWait();
             return;
         }
@@ -83,9 +83,9 @@ public class ReadingTrackerController {
         SqlConnector.updateReadingTrackerItem(item);
         loadReadingTrackerGrid();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Editatuta");
+        alert.setTitle("Edited");
         alert.setHeaderText(null);
-        alert.setContentText("Registro editado correctamente.");
+        alert.setContentText("Record edited successfully.");
         alert.showAndWait();
     }
 
@@ -98,9 +98,9 @@ public class ReadingTrackerController {
         // Validar campos vacíos
         if (selectedLabel == null || date == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Errorea (Datu hutsak)");
+            alert.setTitle("Error (Invalid data)");
             alert.setHeaderText(null);
-            alert.setContentText("Entrada hutsak. Aukeratu egoera eta data bat.");
+            alert.setContentText("Empty entries. Choose a status and date.");
             alert.showAndWait();
             return;
         }
@@ -108,9 +108,9 @@ public class ReadingTrackerController {
         // No permitir fechas futuras
         if (date.isAfter(LocalDate.now())) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Errorea (Data okerra)");
+            alert.setTitle("Error (Future date)");
             alert.setHeaderText(null);
-            alert.setContentText("Ezin daiteke etorkizuneko data bat aukeratu.");
+            alert.setContentText("It is not possible to select a future date. Please select a valid date.");
             alert.showAndWait();
             return;
         }
@@ -122,9 +122,9 @@ public class ReadingTrackerController {
                 item.getDay() == date.getDayOfMonth());
         if (exists) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Errorea (Data errepikatua)");
+            alert.setTitle("Error (Date already exists)");
             alert.setHeaderText(null);
-            alert.setContentText("Ezin daiteke data hau erabili, dagoeneko erregistratuta dago.");
+            alert.setContentText("This date cannot be used, it is already registered.");
             alert.showAndWait();
             return;
         }
@@ -137,9 +137,9 @@ public class ReadingTrackerController {
 
         if (status == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Errorea (Egoera okerra)");
+            alert.setTitle("Error (Incorrect status)");
             alert.setHeaderText(null);
-            alert.setContentText("Egoera okerra hautatu da. Aukeratu baliozko egoera bat.");
+            alert.setContentText("Invalid status selected. Please select a valid status.");
             alert.showAndWait();
             return;
         }
@@ -154,9 +154,9 @@ public class ReadingTrackerController {
         SqlConnector.insertReadingTrackerItem(item);
         loadReadingTrackerGrid();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Gordeta");
+        alert.setTitle("Saved");
         alert.setHeaderText(null);
-        alert.setContentText("Registro guardado correctamente.");
+        alert.setContentText("Record saved successfully.");
         alert.showAndWait();
     }
 

@@ -13,7 +13,7 @@
       <children>
          <HBox alignment="CENTER" prefHeight="33.0" prefWidth="181.0">
             <children>
-               <Button alignment="CENTER" onAction="#handleNew" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Berria" textFill="#004aad" />
+               <Button alignment="CENTER" onAction="#handleNew" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="New" textFill="#004aad" />
             </children>
          </HBox>
          <HBox alignment="CENTER" prefHeight="33.0" prefWidth="170.0">
@@ -23,7 +23,7 @@
          </HBox>
          <HBox alignment="CENTER" prefHeight="33.0" prefWidth="181.0">
             <children>
-               <Button alignment="CENTER" onAction="#handleDeleteSelected" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Ezabatu" textFill="#004aad" />
+               <Button alignment="CENTER" onAction="#handleDeleteSelected" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Delete" textFill="#004aad" />
             </children>
          </HBox>
       </children>

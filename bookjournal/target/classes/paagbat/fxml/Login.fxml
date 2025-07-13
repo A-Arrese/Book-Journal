@@ -17,34 +17,34 @@
    <VBox alignment="CENTER" layoutX="87.0" layoutY="234.0" prefHeight="160.0" prefWidth="293.0" spacing="15" style="-fx-padding: 20px; -fx-background-radius: 10;">
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label alignment="CENTER" text="Erabiltzailea:  ">
+            <Label alignment="CENTER" text="Username:  ">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameField" promptText="Erabiltzailea" />
+            <TextField fx:id="usernameField" promptText="Username" />
          </children>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label text="Pasahitza:       ">
+            <Label text="Password:       ">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <PasswordField fx:id="passwordField" promptText="Pasahitza" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
          </children>
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="157.0">
                <children>
-                  <Button fx:id="loginButton" alignment="CENTER" style="-fx-background-color: #0097b2; -fx-text-fill: white;" text="Saioa hasi" textFill="#004aad" />
+                  <Button fx:id="loginButton" alignment="CENTER" style="-fx-background-color: #0097b2; -fx-text-fill: white;" text="Log in" textFill="#004aad" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="57.0" prefWidth="157.0">
                <children>
-                  <Button onAction="#handleSingup" style="-fx-background-color: #0097b2; -fx-text-fill: white;" text="Sortu kontua" />
+                  <Button onAction="#handleSingup" style="-fx-background-color: #0097b2; -fx-text-fill: white;" text="Sing up" />
                </children>
             </HBox>
          </children>

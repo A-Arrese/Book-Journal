@@ -45,7 +45,7 @@
       </children>
    </HBox>
    <ComboBox fx:id="genreCombo" layoutX="55.0" layoutY="331.0" prefHeight="34.0" prefWidth="184.0" visibleRowCount="7" />
-   <Button fx:id="gordeButton" layoutX="278.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Gorde" />
-   <Button fx:id="portadaButton" layoutX="278.0" layoutY="462.0" mnemonicParsing="false" onAction="#handlePortada" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Portada" />
-   <Button fx:id="itxuliButton" layoutX="278.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Itxuli" />
+   <Button fx:id="gordeButton" layoutX="278.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Save" />
+   <Button fx:id="portadaButton" layoutX="278.0" layoutY="462.0" mnemonicParsing="false" onAction="#handlePortada" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Book Cover" />
+   <Button fx:id="itxuliButton" layoutX="278.0" layoutY="497.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Back" />
 </AnchorPane>

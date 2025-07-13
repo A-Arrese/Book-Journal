@@ -25,8 +25,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import paagbat.App;
 import paagbat.model.AudioBook;
 import paagbat.model.Ebook;
@@ -91,7 +91,7 @@ public class NewBookController {
     @FXML
     private void handlePortada() {
         javafx.stage.FileChooser fileChooser = new javafx.stage.FileChooser();
-        fileChooser.setTitle("Aukeratu portada");
+        fileChooser.setTitle("Choose the cover");
         fileChooser.getExtensionFilters().addAll(
             new javafx.stage.FileChooser.ExtensionFilter("Irudiak", "*.png", "*.jpg", "*.jpeg")
         );
@@ -114,7 +114,7 @@ public class NewBookController {
                 javafx.scene.image.Image image = new javafx.scene.image.Image(destPath.toUri().toString());
                 coverImageView.setImage(image);
             } catch (Exception e) {
-                showAlert("Errorea irudia kopiatzean: " + e.getMessage());
+                showAlert("Error copying image: " + e.getMessage());
             }
         }
     }
@@ -142,7 +142,7 @@ public class NewBookController {
         try {
             pages = Integer.parseInt(orriakText.getText());
         } catch (NumberFormatException e) {
-            showAlert("Orrialde-kopurua ez da zuzena.");
+            showAlert("The number of pages is incorrect..");
             return;
         }
 
@@ -156,17 +156,17 @@ public class NewBookController {
         } else if (fisikoaCheck.isSelected()) {
             newBook = new PhysicalBook(0, title, author, genre, pages, coverImagePath);
         }else {
-            showAlert("Formatu bat aukeratu beharra duzu.");
+            showAlert("You need to choose a format.");
             return;
         }
 
         if (SqlConnector.saveBookToDatabase(newBook, user.getId())) {
-            showAlert("Liburua zuzen gorde da.");
+            showAlert("The book was saved correctly..");
             clearForm();
             App.setRoot("RedingLog");
 
         } else {
-            showAlert("Errorea liburua gordetzean.");
+            showAlert("Error saving book.");
         }
     }
 

@@ -142,9 +142,9 @@ public class RedingLogController {
         if (selectedItems.size() != 1) {
             // Abisua: liburu bat eta bakarra aukeratu behar da
             Alert alert = new Alert(AlertType.WARNING);
-            alert.setTitle("Aukera okerra");
+            alert.setTitle("Wrong choice");
             alert.setHeaderText(null);
-            alert.setContentText("Liburu bakarra aukeratu beharra duzu.");
+            alert.setContentText("You can choose only one book.");
             alert.showAndWait();
             return;
         }

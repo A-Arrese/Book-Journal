@@ -48,22 +48,22 @@ public class SingupController {
         String confirmPassword = passwordField1.getText();
 
         if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()){
-            showAlert("Eremu guztiak bete behar dira.");
+            showAlert("All fields are required.");
             return;
         }
 
         if (!password.equals(confirmPassword)) {
-            showAlert("Pasahitzak ez dira berdinak.");
+            showAlert("The passwords are not the same.");
             return;
         }
 
         boolean success = SqlConnector.registerUser(username, password);
 
         if (success) {
-            showInfo("Kontua sortu da! Saioa hasi dezakezu.");
+            showInfo("Your account has been created! You can log in.");
             App.setRoot("Login");
         } else {
-            showAlert("Erabiltzaile hori jadanik existitzen da.");
+            showAlert("This user already exists.");
         }
     }
 
@@ -75,7 +75,7 @@ public class SingupController {
      */
     private void showAlert(String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle("Errorea");
+        alert.setTitle("Error");
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
@@ -88,7 +88,7 @@ public class SingupController {
      */
     private void showInfo(String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Informazioa");
+        alert.setTitle("Information");
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();

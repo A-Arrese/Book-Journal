@@ -54,19 +54,19 @@ public class StatsController {
      * Balorazio taula konfiguratu (1etik 5 izarrera arteko zutabeak sortuz).
      */
     private void setupRatingTable() {
-        TableColumn<RatingValueItem, Number> star1Col = new TableColumn<>("⭐ Izar 1");
+        TableColumn<RatingValueItem, Number> star1Col = new TableColumn<>("⭐ 1 Star");
         star1Col.setCellValueFactory(cell -> cell.getValue().star1Property());
 
-        TableColumn<RatingValueItem, Number> star2Col = new TableColumn<>("⭐ Izar 2");
+        TableColumn<RatingValueItem, Number> star2Col = new TableColumn<>("⭐ 2 Star");
         star2Col.setCellValueFactory(cell -> cell.getValue().star2Property());
 
-        TableColumn<RatingValueItem, Number> star3Col = new TableColumn<>("⭐ Izar 3");
+        TableColumn<RatingValueItem, Number> star3Col = new TableColumn<>("⭐ 3 Star");
         star3Col.setCellValueFactory(cell -> cell.getValue().star3Property());
 
-        TableColumn<RatingValueItem, Number> star4Col = new TableColumn<>("⭐ Izar 4");
+        TableColumn<RatingValueItem, Number> star4Col = new TableColumn<>("⭐ 4 Star");
         star4Col.setCellValueFactory(cell -> cell.getValue().star4Property());
 
-        TableColumn<RatingValueItem, Number> star5Col = new TableColumn<>("⭐ Izar 5");
+        TableColumn<RatingValueItem, Number> star5Col = new TableColumn<>("⭐ 5 Star");
         star5Col.setCellValueFactory(cell -> cell.getValue().star5Property());
 
         rating_TableView.getColumns().setAll(star1Col, star2Col, star3Col, star4Col, star5Col);

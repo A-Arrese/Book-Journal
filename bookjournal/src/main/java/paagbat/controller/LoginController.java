@@ -11,15 +11,14 @@
  */
 package paagbat.controller;
 
+import java.io.IOException;
+
 import javafx.fxml.FXML;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
-
-import java.io.IOException;
-
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import paagbat.App;
 import paagbat.model.Erabiltzailea;
 import paagbat.model.SqlConnector;
@@ -74,9 +73,9 @@ public class LoginController {
             }
         } else {
             Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Errorea (Login hutsa)");
+            alert.setTitle("Error (Invalid Login)");
             alert.setHeaderText(null);
-            alert.setContentText("Erabiltzailea edo pasahitza ez da zuzena.");
+            alert.setContentText("Username or password is incorrect.");
             alert.showAndWait();
         }
     }

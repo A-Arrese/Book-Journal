@@ -59,7 +59,7 @@ public class WishListController {
         TableColumn<WishListItem, Number> priceCol = new TableColumn<>("Price");
         priceCol.setCellValueFactory(cell -> cell.getValue().priceProperty());
 
-        TableColumn<WishListItem, String> buytCol = new TableColumn<>("Erosita");
+        TableColumn<WishListItem, String> buytCol = new TableColumn<>("Purchased");
         buytCol.setCellValueFactory(cell -> cell.getValue().buyProperty());
 
         wishList_TableView.getColumns().setAll(selectCol, titleCol, authorCol, priceCol, buytCol);

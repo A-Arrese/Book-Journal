@@ -62,7 +62,7 @@ public class RatingController {
     private void handleGorde(ActionEvent event){
         User currentUser = Erabiltzailea.getCurrentUser();
         if (currentUser == null) {
-            System.out.println("Ez dago erabiltzaile aktiborik.");
+            System.out.println("There are no active users.");
             return;
         }
     
@@ -77,7 +77,7 @@ public class RatingController {
         SqlConnector.saveRatingValues(userID, s1, s2, s3, s4, s5);
         setFieldsDisabled(true);
 
-        System.out.println("Balorazioa ondo gorde da.");
+        System.out.println("Rating saved successfully.");
     }
 
     /**

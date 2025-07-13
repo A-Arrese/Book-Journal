@@ -12,17 +12,17 @@
       <children>
          <HBox alignment="CENTER" prefHeight="26.0" prefWidth="110.0">
             <children>
-               <Button alignment="CENTER" onAction="#handleNew" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Berria" textFill="#004aad" />
+               <Button alignment="CENTER" onAction="#handleNew" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="New" textFill="#004aad" />
             </children>
          </HBox>
          <HBox alignment="CENTER" prefHeight="26.0" prefWidth="110.0">
             <children>
-               <Button onAction="#handleBuy" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Erosita" />
+               <Button onAction="#handleBuy" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Purchased" />
             </children>
          </HBox>
          <HBox alignment="CENTER" prefHeight="26.0" prefWidth="110.0">
             <children>
-               <Button onAction="#handleDelete" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Ezabatu" />
+               <Button onAction="#handleDelete" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Delete" />
             </children>
          </HBox>
       </children>

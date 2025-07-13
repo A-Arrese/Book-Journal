@@ -3454,19 +3454,19 @@ is being used to size a border should also be in pixels.
 }
 
 #loginbackground{
-    -fx-background-image: url("../img/backgrounds/login.png");
+    -fx-background-image: url("../img/backgrounds/Login.png");
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 
 #singupBackground{
-    -fx-background-image: url("../img/backgrounds/singup.png");
+    -fx-background-image: url("../img/backgrounds/Singup.png");
     -fx-background-size: cover;
     -fx-background-position: center;
 }
 
 #ratingbackground{
-    -fx-background-image: url("../img/backgrounds/rating.png");
+    -fx-background-image: url("../img/backgrounds/Rating.png");
     -fx-background-size: cover;
     -fx-background-position: center;
 }
@@ -3523,4 +3523,7 @@ is being used to size a border should also be in pixels.
 .grid-pane > .cell {
     -fx-border-color: #668094;
     -fx-border-width: 0.5;
+}
+#NotUseDays{
+    -fx-background-color: #01070c;
 }

@@ -46,12 +46,12 @@
         <children>
             <HBox alignment="CENTER" prefHeight="33.0" prefWidth="181.0">
                 <children>
-                    <Button alignment="CENTER" onAction="#handleEdit" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Balioak editatu" textFill="#004aad" />
+                    <Button alignment="CENTER" onAction="#handleEdit" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Edit values" textFill="#004aad" />
                 </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="33.0" prefWidth="170.0">
                 <children>
-                    <Button onAction="#handleGorde" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Gorde balioak" />
+                    <Button onAction="#handleGorde" style="-fx-background-color: #6e94b8; -fx-text-fill: white;" text="Save the values" />
                 </children>
             </HBox>
         </children>

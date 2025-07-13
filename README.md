@@ -16,13 +16,13 @@
   - [2.5.- Book Review Page](#25--book-review-page)
   - [2.6.- Stats Page](#26--stats-page)
 - [3.- CHANGES MADE](#3--changes-made)
-- [4.- CLASS DIAGRAM](#4--class-diagram)
-- [5.- ADDITIONAL INFORMATION](#5--additional-information)
-  - [5.1.- Brief Description](#51--brief-description)
-  - [5.2.- SQL Files](#52--sql-files)
-- [6.- NOTES](#6--notes)
-  - [6.1.- Weaknesses of the Work](#61--weaknesses-of-the-work)
-  - [6.2.- Future Improvements](#62--future-improvements)
+- [3.- CLASS DIAGRAM](#3--class-diagram)
+- [4.- ADDITIONAL INFORMATION](#4--additional-information)
+  - [4.1.- Brief Description](#41--brief-description)
+  - [4.2.- SQL Files](#42--sql-files)
+- [5.- NOTES](#5--notes)
+  - [5.1.- Weaknesses of the Work](#51--weaknesses-of-the-work)
+  - [5.2.- Future Improvements](#52--future-improvements)
 
 
 ##
@@ -138,12 +138,13 @@ On the right side of the screen, several buttons appear, allowing the user to qu
 
 ![Stats page appearance](./AppIrudiak/Stats.png)
 
-##
-## **3.- CHANGES MADE**:
-**Rating tracker section:**
+### <ins>2.7- Rating tracker page</ins>
 
-**Favorite books section:**
+![Rating tracker page appearance](./AppIrudiak/Stats.png)
 
+### <ins>2.8- Favorite books page</ins>
+
+![Favorite books page appearance](./AppIrudiak/Stats.png)
 
 ##
 ## **4.- CLASS DIAGRAM**:

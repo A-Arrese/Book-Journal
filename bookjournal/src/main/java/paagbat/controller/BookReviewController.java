@@ -79,14 +79,14 @@ public class BookReviewController {
             comboBoxRating.setValue(null); // Ez badu, utzi hutsik edo beste balio bat
         }
         // Bete balio lehenetsiak
-        comboBoxRating.setValue("Zabaldu");
+        comboBoxRating.setValue("Expand");
         dataText.setText("yyyy/mm/dd - yyyy/mm/dd");
 
         // Hautatutako liburua badago, datuak kargatu
         if (selectedBook != null) {
             setBookData(selectedBook);
         } else {
-            System.out.println("Ez dago hautatutako libururik.");
+            System.out.println("There are no books selected.");
         }
         
     }
@@ -97,7 +97,7 @@ public class BookReviewController {
      * @param book Hautatutako liburua {@link ReadingLogItem} moduan
      */
     public void setBookData(ReadingLogItem book) {
-        System.out.println("Liburuaren datuak kargatzen: " + book.getTitle());
+        System.out.println("Loading book data: " + book.getTitle());
 
         izenburuaText.setText(selectedBook.getTitle());
         idazleaText.setText(selectedBook.getAuthor());
@@ -134,26 +134,26 @@ public class BookReviewController {
         // Data egiaztatu
         if (dateRange == null || dateRange.trim().equals("") || dateRange.equals("yyyy/mm/dd - yyyy/mm/dd")
                 || !dateRange.contains(" - ")) {
-            erakutziAlerta("Datu okerra",
-                    "Data txarto sartu da.\nHurrengo formatua izan behar du: yyyy/mm/dd - yyyy/mm/dd");
+            erakutziAlerta("Incorrect date format",
+                    "The date entered is invalid.\nIt must be in the following format: yyyy/mm/dd - yyyy/mm/dd");
             return;
         }
 
         // Puntuazioa egiaztatu
         if (rating == null || rating.trim().isEmpty()) {
-            erakutziAlerta("Puntuazio falta", "Mesedez, aukeratu puntuazio bat.");
+            erakutziAlerta("Missing score", "Please choose a score.");
             return;
         }
 
         // Formatu bat aukeratu den egiaztatu
         if (!hasFormat) {
-            erakutziAlerta("Formatu falta", "Mesedez, hautatu gutxienez formatu bat (fisikoa, ebook edo audiobook).");
+            erakutziAlerta("Missing format", "Please select at least one format (physical, ebook or audiobook).");
             return;
         }
 
         // Iritzia egiaztatu
         if (notes == null || notes.trim().isEmpty()) {
-            erakutziAlerta("Iritzia hutsik", "Mesedez, idatzi zure iritzia.");
+            erakutziAlerta("Opinion empty", "Please write your opinion");
             return;
         }
 
