@@ -145,6 +145,37 @@ On the right side of the screen, several buttons appear, allowing the user to qu
 ![Stats page appearance](./AppIrudiak/Stats.png)
 
 ### <ins>2.8- Rating tracker page</ins>
+his section provides a visual and structured way to track daily reading progress using a pixel-style calendar. It is accessible through the main interface of the BookJournal application and is designed to help users reflect on their reading habits over the year.
+
+#### 🗓️ Daily Reading Log
+On the left side, a calendar grid displays all 12 months and 31 days. Each cell represents a specific day of the year and is color-coded based on the number of pages read. This allows users to see their reading consistency and intensity at a glance.
+
+#### 🎨 Color Legend
+To the right of the calendar, a legend explains what each color means:
+
+- 🔴 0–10 pages
+- 🟠 11–30 pages
+- 🟡 31–50 pages
+- 🟢 51–70 pages
+- 🔵 71–90 pages
+- 🟣 91–150 pages
+- 🟪 150+ pages
+
+These colors give a quick visual summary of how much was read on each day.
+
+#### ✏️ Input Section
+Below the legend, users can manually log their reading activity:
+- **Number of pages read**: Input the number using the dropdown.
+- **Reading date**: Select the specific date using the calendar picker.
+- Use the **Save** button to log your reading, or **Edit** to modify an existing entry.
+
+#### 🧭 Navigation
+On the right-hand side, three circular buttons allow users to navigate between different parts of the application. Each button is associated with a specific function, such as:
+- Viewing statistics
+- Accessing reading records
+- Returning to the home screen
+
+The interface is clean, minimal, and visually engaging, encouraging consistent daily logging and long-term reflection on reading progress.
 
 ![Rating tracker page appearance](./AppIrudiak/RatingTracker.png)
 
