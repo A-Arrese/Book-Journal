@@ -10,12 +10,14 @@
   - [1.1.- Technologies Used](#11--technologies-used)
 - [2.- GRAPHICAL INTERFACE FLOW](#2--graphical-interface-flow)
   - [2.1.- Home Page](#21--home-page)
-  - [2.3.- Rating System Page](#22--rating-system-page)
+  - [2.2.- Main Menu Page](#22--main-menu-page)
+  - [2.3.- Rating System Page](#23--rating-system-page)
   - [2.4.- Reading Log Page](#24--reading-log-page)
   - [2.5.- Wishlist Page](#25--wishlist-page)
   - [2.6.- Book Review Page](#26--book-review-page)
   - [2.7.- Stats Page](#27--stats-page)
-- [3.- CHANGES MADE](#3--changes-made)
+  - [2.8.- Rating Tracker Page](#28--rating-tracker-page)
+  - [2.9.- Favorite Books Page](#29--favorite-books-page)
 - [3.- CLASS DIAGRAM](#3--class-diagram)
 - [4.- ADDITIONAL INFORMATION](#4--additional-information)
   - [4.1.- Brief Description](#41--brief-description)
@@ -151,14 +153,14 @@ On the right side of the screen, several buttons appear, allowing the user to qu
 ![Favorite books page appearance](./AppIrudiak/FavoriteBooks.png)
 
 ##
-## **4.- CLASS DIAGRAM**:
+## **3.- CLASS DIAGRAM**:
 
 ![Project Class Diagram](./KlaseDiagrama.svg)
 
 ##
-## **5.- ADDITIONAL INFORMATION**:
+## **4.- ADDITIONAL INFORMATION**:
 
-### <ins>5.1.- BRIEF DESCRIPTION</ins>:
+### <ins>4.1.- BRIEF DESCRIPTION</ins>:
 #### **PURPOSE**
 The BookJournal database was created for users to track the books they have read. Each user can manage their books, reviews, personalized ratings, and a "wishlist" of books they want.
 
@@ -200,12 +202,12 @@ The user is created so the application can work with the database:
 
 `GRANT INSERT, SELECT, UPDATE, DELETE ON bookjournal.* TO 'journalAdmin'@'%';`
 
-### <ins>5.2.- SQL FILES</ins>:
+### <ins>4.2.- SQL FILES</ins>:
 
 - [SQL file](./bookjournal/src/main/resources/paagbat/sql/bookjournal.sql)
 
 ##
-## **6.- NOTES**:
+## **5.- NOTES**:
 
 ### <ins>6.1.- Weaknesses of the Work</ins>:
  - *Reliability of the data entry mechanism:* Users must manually enter data in several cases (date range, number of pages, etc.), which increases the possibility of errors. There is no automatic format validation in all cases.
