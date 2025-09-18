@@ -1,9 +1,5 @@
 # 📚 BookJournal - Aplication
-### 👩‍💻 AUTHOR
 
-- [Ainhize Arrese](https://github.com/A-Arrese)
-
-##
 ## 🔎 TABLE OF CONTENTS
 
 - [1.- INTRODUCTION](#1--introduction)
@@ -249,3 +245,8 @@ The user is created so the application can work with the database:
  - Option to add book cover images: Allow users to add a cover image for the book, making the user experience more visual and personalized.
  - More advanced statistics: Add graphs over time (pages read per month, rating evolution, etc.) to better understand the user's reading habits.
  - Favorites list: Allow users to mark their favorite books and have a separate list for them.
+
+
+### 👩‍💻 AUTHOR
+
+- [Ainhize Arrese](https://github.com/A-Arrese)
