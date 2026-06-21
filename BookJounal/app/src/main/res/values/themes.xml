@@ -1,0 +1,18 @@
+<resources>
+    <style name="Base.Theme.BookJounal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores MÍNIMOS necesarios -->
+        <item name="colorPrimary">@color/border_blue</item>
+        <item name="colorPrimaryVariant">@color/background_menu</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/background_menu</item>
+        <item name="colorSecondary">@color/background_blue</item>
+
+        <!-- Estos son los que está buscando BottomNavigationView -->
+        <item name="android:colorBackground">@color/background_blue</item>
+
+        <!-- Color de texto -->
+        <item name="android:textColor">#031264</item>
+    </style>
+
+    <style name="Theme.BookJounal" parent="Base.Theme.BookJounal" />
+</resources>

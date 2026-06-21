@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#050505</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="border_blue">#4e6484</color>
+    <color name="background_blue">#cae5f4</color>
+    <color name="not_use_space">#b9cce9</color>
+    <color name="background_menu">#0764AD</color>
+
+    <color name="design_default_color_primary">#4e6484</color>
+    <color name="design_default_color_primary_dark">#0764AD</color>
+    <color name="design_default_color_secondary">#cae5f4</color>
+</resources>
